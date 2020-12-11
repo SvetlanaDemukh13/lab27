@@ -1,0 +1,33 @@
+body{
+    background: radial-gradient(circle at 80px 40px, #f9c7c7, #f7b57f, #fddf9a);
+}
+div{
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+a{
+    color: red;
+    font-size: 70px;
+    top:48%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
+a:after {
+    background-color:red;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
